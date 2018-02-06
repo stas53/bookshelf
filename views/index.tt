@@ -1,0 +1,16 @@
+<ul class=entries>
+<h3><i>Please, select a View</i></h3>
+
+  <form action="<% authors_url %>" method=get>
+    <dl>
+      <dd><input type=submit value=Authors style="background: #31eab4;">
+    </dl>
+  </form>
+
+  &nbsp;
+
+  <form action="<% books_url %>" method=get>
+    <dl>
+      <dd><input type=submit value=Books style="background: #c1eab4;">
+    </dl>
+  </form>

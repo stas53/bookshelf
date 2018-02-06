@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <title>Bookshelf</title>
+  <link rel=stylesheet type=text/css href="<% css_url %>">
+</head>
+<body>
+  <div class=page>
+  <h1>Bookshelf</h1>
+  <h4><i>A bookworm exploring Dancer</i></h4>
+  <h3>Our small collection of books</h3>
+
+  <% IF msg %>
+    <div class=flash> <% msg %> </div>
+  <% END %>
+  <% content %>
+</div>
+</body>
+</html>

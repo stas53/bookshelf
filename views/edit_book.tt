@@ -1,0 +1,28 @@
+<ul class=entries>
+<h2><i>Book details</i></h2>
+
+  <form action="<% add_entry_url %>" method=post class=add-entry>
+    <dl>
+      <dt>ID:
+      <dd><input type=text size=4  style="background: #f6f7af;" name=book_id value="<% entry.book_id %>">
+      <dt>Author:
+      <dd><input type=text size=50 style="background: #f6f7af;" name=author value="<% entry.author %>">
+      <dt>Title:
+      <dd><input type=text size=40 style="background: #f6f7af;" name=title value="<% entry.title %>">
+      <dt>Date of Publication:
+      <dd><input type=text size=20 style="background: #f6f7af;" name=publ_date value="<% entry.publ_date %>">
+      <dt>ISBN:
+      <dd><input type=text size=20 style="background: #f6f7af;" name=isbn value="<% entry.isbn %>">
+    </dl>
+  </form>
+
+<br/>
+
+<h4>Back to Books View</h4>
+<form action="<% books_url %>" method=get>
+    <dl>
+      <dd><input type=submit value=Books style="background: #c1eab4;">
+    </dl>
+</form>
+
+<h5><i>Implementation of the edition operation is left to the Reader as an easy exercise. :-)</i></h5>

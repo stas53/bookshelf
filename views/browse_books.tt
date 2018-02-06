@@ -1,0 +1,31 @@
+<ul class=entries>
+<h2>Books</h2>
+<% IF entries.size %>
+  <table border="1" style="background: #c1eab4;">
+    <thead><th>ID</th><th>Author</th><th>Title</th><th>Publ. Date</th><th>ISBN</th><th></th></thead>
+    <tbody align="left" style="background: #f6f7af;">
+      <% FOREACH bki IN ids_in_order %>
+        <tr>
+            <td><% entries.$bki.book_id %></td>
+            <td><% entries.$bki.author %></td>
+            <td><% entries.$bki.title %></td>
+            <td><% entries.$bki.publ_date %></td>
+            <td><% entries.$bki.isbn %></td>
+            <td><a href="<% detail_book_prefix_url %><% entries.$bki.book_id %>" style="display:block;"><i> &nbsp; details &nbsp; </i></a></td>
+        </tr>
+      <% END %>
+    </tbody>
+  </table>
+<% ELSE %>
+  <li><em>No books here so far</em>
+<% END %>
+</ul>
+
+<br/>
+
+<h4>Switch to Authors</h4>
+<form action="<% authors_url %>" method=get>
+    <dl>
+      <dd><input type=submit value="Authors" style="background: #31eab4;">
+    </dl>
+</form>
