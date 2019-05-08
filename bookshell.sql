@@ -46,7 +46,7 @@ CREATE TABLE `authors` (
 
 LOCK TABLES `authors` WRITE;
 /*!40000 ALTER TABLE `authors` DISABLE KEYS */;
-INSERT INTO `authors` VALUES (1,'Marcus','Aurelius','Rome Empire'),(2,'Johann Sebastian','Bach','Germany'),(3,'Kenneth','Chesterton','United Kingdom'),(4,'Charles','Darwin','United Kingdom'),(5,'Charles ','Dickens','United Kingdom'),(6,'Bertrand','Russell','United Kingdom'),(7,'k.','Whitehead','United Kingdom'),(8,'William','Shakespeare','United Kingdom'),(16,'A.U.','Thor','USA');
+INSERT INTO `authors` VALUES (1,'Marcus','Aurelius','Rome Empire'),(2,'Johann Sebastian','Bach','Germany'),(3,'Kenneth','Chesterton','United Kingdom'),(4,'Charles','Darwin','United Kingdom'),(5,'Charles ','Dickens','United Kingdom'),(6,'Bertrand','Russell','United Kingdom'),(7,'Alfred North','Whitehead','United Kingdom'),(8,'William','Shakespeare','United Kingdom'),(16,'A.U.','Thor','USA');
 /*!40000 ALTER TABLE `authors` ENABLE KEYS */;
 UNLOCK TABLES;
 
